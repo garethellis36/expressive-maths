@@ -1,0 +1,37 @@
+{
+  "name": "garethellis/expressive-maths",
+  "type": "library",
+  "license": "MIT",
+  "description": "A lightweight library for performing simple mathematical operations in an expressive way.",
+  "authors": [
+    {
+      "name": "Gareth Ellis",
+      "email": "garethellis@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^5.3",
+    "hamcrest/hamcrest-php": "^2.0",
+    "graze/hamcrest-test-listener": "^2.0"
+  },
+  "require": {
+    "beberlei/assert": "^2.5"
+  },
+  "autoload": {
+    "files": [
+      "src/functions.php"
+    ],
+    "psr-4": {
+      "Garethellis\\ExpressiveMaths\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "files": [
+      "src/functions.php"
+    ],
+    "psr-4": {
+      "Garethellis\\ExpressiveMaths\\Test\\": "test/"
+    }
+  }
+}

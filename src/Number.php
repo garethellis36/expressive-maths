@@ -144,6 +144,12 @@ class Number
         return new self($this->number * $this->number);
     }
 
+    /**
+     * Raises current number to the power $n.
+     * 
+     * @param int|float|string $number An integer, float or numeric string.
+     * @return Number
+     */
     public function toThePower($n)
     {
         Assertion::numeric($n);

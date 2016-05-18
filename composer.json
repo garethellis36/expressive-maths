@@ -16,6 +16,7 @@
     "graze/hamcrest-test-listener": "^2.0"
   },
   "require": {
+    "php": ">= 5.6",
     "beberlei/assert": "^2.5"
   },
   "autoload": {

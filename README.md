@@ -2,6 +2,10 @@
 
 This is a lightweight PHP library for performing simple mathematical operations in an expressive way.
 
+## Requirements ##
+
+This library requires PHP 5.6 or higher.
+
 ## Installation ##
 
 Install with composer:

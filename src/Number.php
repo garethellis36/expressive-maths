@@ -165,4 +165,16 @@ class Number
     {
         return new self(sqrt($this->number));
     }
+
+    /**
+     * Calculates log $n of current number. Inverse operation to raising to the power.
+     * 
+     * @param int|float|string $number An integer, float or numeric string.
+     * @return Number
+     */
+    public function log($n)
+    {
+        Assertion::numeric($n);
+        return new self(pow($this->number, (1/$n)));
+    }
 }

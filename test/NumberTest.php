@@ -165,4 +165,12 @@ class NumberTest extends PHPUnit_Framework_TestCase
     {
         assertThat(calculate(64)->squareRoot(), is(equalTo("8")));
     }
+
+    /**
+     * @return void
+     */
+    public function test_it_can_correctly_calculate_the_nth_root_of_a_given_number()
+    {
+        assertThat(calculate("16")->log("4"), is(equalTo("2")));
+    }
 }

@@ -71,11 +71,17 @@ class NumberTest extends PHPUnit_Framework_TestCase
         assertThat(calculate(25)->asAPercentageOf(100), is(equalTo("25")));
     }
 
+    /**
+     * @return void
+     */
     public function test_dividing_by_zero_returns_null_when_calculating_percentage()
     {
         assertThat(calculate(25)->asAPercentageOf(0), is(nullValue()));
     }
 
+    /**
+     * @return void
+     */
     public function test_calculating_percentage_returns_new_object()
     {
         $number = new Number(25);
@@ -83,6 +89,9 @@ class NumberTest extends PHPUnit_Framework_TestCase
         assertThat($number, (is(not(sameInstance($perc)))));
     }
 
+    /**
+     * @return void
+     */
     public function test_it_can_add_one_number_to_another()
     {
         assertThat(calculate(4)->plus(9), is(equalTo("13")));

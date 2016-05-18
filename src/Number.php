@@ -21,6 +21,9 @@ class Number
         $this->number = $number;
     }
 
+    /**
+     * @return string
+     */
     public function __toString()
     {
         return (string)$this->number;
@@ -96,7 +99,7 @@ class Number
     }
 
     /**
-     * Multiple current number by given number.
+     * Multiply current number by given number.
      * 
      * @param int|float|string $number An integer, float or numeric string.
      * @return Number

@@ -123,12 +123,12 @@ echo calculate(2)->plus(2);
 //this will echo "4"
 ```
 
-In addition there is a getter method on `Number` if you wish to get the value and do something else with it,
+In addition there is a getter method `Number::equals()` if you wish to get the value and do something else with it,
 or simply want to leave it as an int, float or whatever:
 
 ```php
 <?php
 use function Garethellis\ExpressiveMaths\calculate;
 
-var_dump(calculate(2)->plus(2)->getValue()); //(int) 4
+var_dump(calculate(2)->plus(2)->equals()); //(int) 4
 ```

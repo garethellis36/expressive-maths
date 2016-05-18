@@ -26,7 +26,10 @@ class Number
         return (string)$this->number;
     }
 
-    public function getValue()
+    /**
+     * @return float|int|string
+     */
+    public function equals()
     {
         return $this->number;
     }
@@ -43,7 +46,7 @@ class Number
         if (!$number) {
             return null;
         }
-        return new self($this->dividedBy($number)->getValue() * 100);
+        return new self($this->dividedBy($number)->equals() * 100);
     }
 
     /**

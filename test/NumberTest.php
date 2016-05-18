@@ -124,4 +124,28 @@ class NumberTest extends PHPUnit_Framework_TestCase
     {
         assertThat(calculate(4)->squared(), is(equalTo("16")));
     }
+
+    /**
+     * @return void
+     */
+    public function test_equals_method_returns_int_when_two_ints_are_operated_on()
+    {
+        assertThat(calculate(4)->times(3)->equals(), is(identicalTo(12)));
+    }
+
+    /**
+     * @return void
+     */
+    public function test_equals_method_returns_correct_int_when_a_string_is_added_to_an_int()
+    {
+        assertThat(calculate("3")->plus(2)->equals(), is(identicalTo(5)));
+    }
+
+    /**
+     * @return void
+     */
+    public function test_it_can_handle_raising_a_number_to_nth_power()
+    {
+        assertThat(calculate(2)->toThePower(4), is(equalTo("16")));
+    }
 }

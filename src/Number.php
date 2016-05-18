@@ -140,4 +140,10 @@ class Number
     {
         return new self($this->number * $this->number);
     }
+
+    public function toThePower($n)
+    {
+        Assertion::numeric($n);
+        return new self($this->number ** $n);
+    }
 }

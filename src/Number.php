@@ -155,4 +155,14 @@ class Number
         Assertion::numeric($n);
         return new self($this->number ** $n);
     }
+
+    /**
+     * Calculates square root of current number.
+     * 
+     * @return Number
+     */
+    public function squareRoot()
+    {
+        return new self(sqrt($this->number));
+    }
 }

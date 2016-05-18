@@ -157,4 +157,12 @@ class NumberTest extends PHPUnit_Framework_TestCase
     {
         assertThat(calculate(2)->toThePower(4), is(equalTo("16")));
     }
+
+    /**
+     * @return void
+     */
+    public function test_it_can_correctly_calculate_the_square_root_of_a_given_number()
+    {
+        assertThat(calculate(64)->squareRoot(), is(equalTo("8")));
+    }
 }
